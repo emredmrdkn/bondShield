@@ -23,12 +23,14 @@ final class bondshield_v1UITests: XCTestCase {
     }
 
     @MainActor
-    func testExample() throws {
+    func testNavigationToInspection() throws {
         // UI tests must launch the application that they test.
         let app = XCUIApplication()
         app.launch()
 
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        app.buttons["Login"].tap()
+        app.buttons["Add New Bond"].tap()
+        XCTAssertTrue(app.staticTexts["Start Inspection"].exists)
     }
 
     @MainActor
