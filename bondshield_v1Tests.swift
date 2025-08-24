@@ -5,13 +5,12 @@
 //  Created by Emre Demirdöken on 21.08.2025.
 //
 
-import Testing
-@testable import bondshield_v1
+import XCTest // testing framework | origin: XCTest
+@testable import bondshield_v1 // access app code | origin: Swift stdlib
 
-struct bondshield_v1Tests {
-
-    @Test func example() async throws {
-        // Write your test here and use APIs like `#expect(...)` to check expected conditions.
+final class bondshield_v1Tests: XCTestCase { // placeholder test suite | origin: XCTest
+    func testExample() throws { // basic always-pass test | origin: XCTest
+        XCTAssertTrue(true) // assert true | origin: XCTest
     }
-
 }
+
